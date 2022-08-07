@@ -11,8 +11,8 @@ namespace UDP_Client
         {
             const string ip = "127.0.0.1";
             const int port = 8082;
-
             IPEndPoint _serverpEndPoint = new IPEndPoint(IPAddress.Parse(ip), port);
+
             Socket _socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
             _socket.Bind(_serverpEndPoint);
 
