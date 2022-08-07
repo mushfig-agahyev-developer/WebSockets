@@ -12,7 +12,6 @@ namespace TCP_Server
         {
             const string ip = "127.0.0.1";
             const int port = 8080;
-
             IPEndPoint _tcpEndPoint = new IPEndPoint(IPAddress.Parse(ip), port);
 
             //for the TCP using Stream
